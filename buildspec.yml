@@ -31,7 +31,8 @@ phases:
       # - command
   build:
     commands:
-      - echo Run unit test
+      - echo Run rspec
+      - docker-compose build
       - docker-compose run web bash build.sh
       # - command
       # - command
