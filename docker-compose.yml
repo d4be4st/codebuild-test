@@ -1,0 +1,10 @@
+version: '3'
+services:
+  db:
+    image: postgres
+  web:
+    build: .
+    volumes:
+      - .:/application
+    depends_on:
+      - db
