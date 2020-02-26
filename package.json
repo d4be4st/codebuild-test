@@ -1,0 +1,5 @@
+{
+  "name": "codebuild-test",
+  "private": true,
+  "dependencies": {}
+}
