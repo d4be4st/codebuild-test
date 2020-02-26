@@ -32,4 +32,4 @@ dump.rdb
 logfile
 .DS_Store
 # Ignore application configuration
-config/application*.yml
+# config/application*.yml
