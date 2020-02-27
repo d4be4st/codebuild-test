@@ -25,14 +25,15 @@ phases:
     #commands:
       # - command
       # - command
-  #pre_build:
-    #commands:
+  pre_build:
+    commands:
+      - docker-compose build
+      - docker-compose ps
       # - command
       # - command
   build:
     commands:
       - echo Run rspec
-      - docker-compose build
       - docker-compose run web bash build.sh
       # - command
       # - command

@@ -2,9 +2,19 @@ version: '3'
 services:
   db:
     image: postgres
+    ports:
+      - '5432'
+    networks:
+      my_network:
   web:
     build: .
     volumes:
       - .:/application
     depends_on:
       - db
+    links:
+      - db:db
+    networks:
+      my_network:
+  networks:
+    my_network:
