@@ -4,8 +4,6 @@ services:
     image: postgres
     ports:
       - '5432'
-    networks:
-      my_network:
   web:
     build: .
     volumes:
@@ -14,7 +12,3 @@ services:
       - db
     links:
       - db:db
-    networks:
-      my_network:
-  networks:
-    my_network:
