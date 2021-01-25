@@ -9,6 +9,7 @@ on:
     types:
       - completed
 
+jobs:
   deploy_staging:
     name: Deploy staging
     runs-on: ubuntu-18.04
