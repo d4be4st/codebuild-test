@@ -18,10 +18,3 @@ jobs:
 
       - name: rubocop
         run: echo Run rubocop
-
-      - name: Start deploy
-        uses: bobheadxi/deployments@v0.4.3
-        with:
-          step: start
-          env: staging
-          token: ${{ secrets.WORKFLOW_TOKEN }}
