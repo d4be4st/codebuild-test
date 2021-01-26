@@ -1,13 +1,6 @@
 name: Deploy
 
-on:
-  workflow_run:
-    workflows: 
-      - Build
-    branches:
-      - master
-    types:
-      - completed
+on: deployment
 
 jobs:
   deploy_staging:
