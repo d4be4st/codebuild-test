@@ -24,4 +24,4 @@ jobs:
         with:
           step: start
           env: staging
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.WORKFLOW_TOKEN }}
