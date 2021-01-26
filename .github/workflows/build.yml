@@ -18,4 +18,4 @@ jobs:
           bundler-cache: true
 
       - name: rubocop
-        run: echo Run rubocop
+        run: exit 1
